@@ -1,0 +1,6 @@
+@seiteAPI_HostAddress = http://localhost:5209
+
+GET {{seiteAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
