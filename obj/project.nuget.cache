@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "onxvOd4xpAs=",
+  "dgSpecHash": "whxkIBm404A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nengl\\Documents\\VS Code\\Level5\\Siete\\seiteAPI\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\nengl\\Documents\\VS Code\\Level5\\Siete\\seiteAPI\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nengl\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\nengl\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

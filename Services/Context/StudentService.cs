@@ -22,15 +22,28 @@ namespace API.Services.Context
             result = _context.SaveChanges() != 0;
             return result;
         }
-        public bool DeleteStudent(StudentModel studentDelete)
+        public bool DeleteStudent(int StudentToDeleteID)
         {
-            throw new NotImplementedException();
+            //Delete the student via ID number
+            StudentModel foundUser = GetStudentByID(StudentToDeleteID);
+            bool result = false;
+            if (foundUser != null)
+            {
+                foundUser.Id = StudentToDeleteID;
+                _context.Remove<StudentModel>(foundUser);
+                result = _context.SaveChanges() != 0;
+            }
+            return result;
         }
 
         public IEnumerable<StudentModel> GetAllStudents()
         {
             return _context.StudentInfo;
         }
-
+        
+        public StudentModel GetStudentByID(int id)
+        {
+            return _context.StudentInfo.SingleOrDefault(student => student.Id == id);
+        }
     }
 }
