@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteAPI\\API.csproj": {}
+    "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteapi\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteAPI\\API.csproj": {
+    "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteapi\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteAPI\\API.csproj",
+        "projectUniqueName": "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteapi\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteAPI\\API.csproj",
+        "projectPath": "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteapi\\API.csproj",
         "packagesPath": "C:\\Users\\neoco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteAPI\\obj\\",
+        "outputPath": "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\neoco\\AppData\\Roaming\\NuGet\\NuGet.Config"

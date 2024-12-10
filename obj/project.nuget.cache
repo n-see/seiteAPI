@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3Dy1A0W25YHasaKYrD6Ae+hd1kiMrl7uR11ZFCY/5zNvwFJSRru6egd7oHW4WMiTonnCS9vdeXFGpSXK/QGtuA==",
+  "dgSpecHash": "rcmGzBvehdMLxlGvFllRd+2keOJBUpOAixDUUPvSkeIeQ/R+wwJ+zqFEhx+tGE0RJo2HzRZwnxq4WdNSDQeNHg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteAPI\\API.csproj",
+  "projectFilePath": "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteapi\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\neoco\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\neoco\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
