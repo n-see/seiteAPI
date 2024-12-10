@@ -18,7 +18,7 @@ builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(conne
 builder.Services.AddCors(options => {
     options.AddPolicy("BlogPolicy",
     builder => {
-        builder.WithOrigins("http://localhost:5020")
+        builder.WithOrigins("http://localhost:5173", "http://localhost:5020")
         .AllowAnyHeader()
         .AllowAnyMethod();
     }
@@ -38,6 +38,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("BlogPolicy");
+
 
 app.UseHttpsRedirection();
 

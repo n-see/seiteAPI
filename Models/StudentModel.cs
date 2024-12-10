@@ -6,6 +6,9 @@ namespace API.Models.DTO
  public class StudentModel
     {
         public int Id { get; set; }
+        public int SSID { get; set; }
+        public int TeacherId { get; set; }
+
         public string? ProfilePicture { get; set; }
         public DateTime Dob { get; set; }
         public int Age => CalculateAge(Dob);
