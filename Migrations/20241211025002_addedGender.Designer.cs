@@ -12,8 +12,8 @@ using api.Services.Context;
 namespace API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20241106224033_Initial")]
-    partial class Initial
+    [Migration("20241211025002_addedGender")]
+    partial class addedGender
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,6 +39,9 @@ namespace API.Migrations
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Gender")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("HomeAddress")
                         .HasColumnType("nvarchar(max)");
 
@@ -60,8 +63,14 @@ namespace API.Migrations
                     b.Property<string>("ProfilePicture")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("SSId")
+                        .HasColumnType("int");
+
                     b.Property<string>("SecondaryContact")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

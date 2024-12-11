@@ -45,5 +45,10 @@ namespace API.Services.Context
         {
             return _context.StudentInfo.SingleOrDefault(student => student.Id == id);
         }
+
+        public IEnumerable<StudentModel>GetStudentsByUserId(int userId)
+        {
+            return _context.StudentInfo.Where(student => student.UserId == userId && student.IsDeleted == false);
+        }
     }
 }

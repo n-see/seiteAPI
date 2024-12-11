@@ -33,6 +33,13 @@ namespace seiteAPI.Controllers
             return _data.DeleteStudent(StudentToDeleteID);
         }
 
+        [HttpGet("GetStudentByUserId/{UserId}")]
+
+        public IEnumerable<StudentModel> GetStudentsByUserId(int UserId)
+        {
+            return _data.GetStudentsByUserId(UserId);
+        }
+
 
     }
 }

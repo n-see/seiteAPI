@@ -1,4 +1,7 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 
 namespace API.Models.DTO
@@ -6,10 +9,11 @@ namespace API.Models.DTO
  public class StudentModel
     {
         public int Id { get; set; }
-        public int SSID { get; set; }
-        public int TeacherId { get; set; }
+        public int SSId { get; set; }
+        public int UserId { get; set; }
 
         public string? ProfilePicture { get; set; }
+        public string? Gender { get; set; }
         public DateTime Dob { get; set; }
         public int Age => CalculateAge(Dob);
         public string? FirstName { get; set; }
