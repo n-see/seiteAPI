@@ -40,6 +40,11 @@ namespace seiteAPI.Controllers
             return _data.GetStudentsByUserId(UserId);
         }
 
+        [HttpGet("GetAllStudents")]
+        public IEnumerable<StudentModel> GetAllStudent()
+        {
+            return _data.GetAllStudent();
+        }
 
     }
 }

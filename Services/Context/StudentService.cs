@@ -37,6 +37,11 @@ namespace seiteAPI.Services.Context
         }
 
         public IEnumerable<StudentModel> GetAllStudents()
+    {
+        return _context.StudentInfo;
+    }
+
+        public IEnumerable<StudentModel> GetAllStudent()
         {
             return _context.StudentInfo;
         }
