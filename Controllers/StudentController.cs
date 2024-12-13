@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using API.Models.DTO;
-using API.Services.Context;
+using seiteAPI.Models.DTO;
+using seiteAPI.Services.Context;
 using Microsoft.AspNetCore.Mvc;
 
 namespace seiteAPI.Controllers

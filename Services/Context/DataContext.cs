@@ -2,12 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using api.Models;
-using API.Models;
-using API.Models.DTO;
+using seiteAPI.Models;
+using seiteAPI.Models.DTO;
 using Microsoft.EntityFrameworkCore;
 
-namespace api.Services.Context;
+namespace seiteAPI.Services.Context;
 
 public class DataContext : DbContext
 {
@@ -18,6 +17,7 @@ public class DataContext : DbContext
 
     public DbSet<UserModel> UserInfo {get; set;}
     public DbSet<StudentModel> StudentInfo {get; set;}
+    public DbSet<GoalsModel> GoalInfo {get; set;}
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

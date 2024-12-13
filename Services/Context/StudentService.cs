@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using api.Services.Context;
-using API.Models.DTO;
+using seiteAPI.Services.Context;
+using seiteAPI.Models.DTO;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.Services.Context
+namespace seiteAPI.Services.Context
 {
     public class StudentService : ControllerBase
     {

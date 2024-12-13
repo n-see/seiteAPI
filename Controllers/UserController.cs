@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using api.Models;
-using api.Models.DTO;
-using api.Services;
+using seiteAPI.Models;
+using seiteAPI.Models.DTO;
+using seiteAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace api.Controllers;
+namespace seiteAPI.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
