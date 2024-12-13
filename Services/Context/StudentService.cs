@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using api.Services.Context;
-using API.Models.DTO;
+using seiteAPI.Services.Context;
+using seiteAPI.Models.DTO;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.Services.Context
+namespace seiteAPI.Services.Context
 {
     public class StudentService : ControllerBase
     {
@@ -44,6 +44,11 @@ namespace API.Services.Context
         public StudentModel GetStudentByID(int id)
         {
             return _context.StudentInfo.SingleOrDefault(student => student.Id == id);
+        }
+
+        public IEnumerable<StudentModel>GetStudentsByUserId(int userId)
+        {
+            return _context.StudentInfo.Where(student => student.UserId == userId && student.IsDeleted == false);
         }
     }
 }

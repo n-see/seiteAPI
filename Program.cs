@@ -1,7 +1,6 @@
 using System;
-using api.Services;
-using api.Services.Context;
-using API.Services.Context;
+using seiteAPI.Services;
+using seiteAPI.Services.Context;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<StudentService>();
 builder.Services.AddScoped<PasswordService>();
+builder.Services.AddScoped<GoalService>();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(connectionString));
@@ -18,7 +18,7 @@ builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(conne
 builder.Services.AddCors(options => {
     options.AddPolicy("BlogPolicy",
     builder => {
-        builder.WithOrigins("http://localhost:5020")
+        builder.WithOrigins("http://localhost:5173", "http://localhost:5020")
         .AllowAnyHeader()
         .AllowAnyMethod();
     }
@@ -38,6 +38,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("BlogPolicy");
+
 
 app.UseHttpsRedirection();
 

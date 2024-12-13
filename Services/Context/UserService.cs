@@ -6,13 +6,13 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using api.Models;
-using api.Models.DTO;
-using api.Services.Context;
+using seiteAPI.Models;
+using seiteAPI.Models.DTO;
+using seiteAPI.Services.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 
-namespace api.Services;
+namespace seiteAPI.Services;
 
 public class UserService : ControllerBase
 {

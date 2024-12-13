@@ -4458,19 +4458,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nengl\\.nuget\\packages\\": {}
+    "C:\\Users\\neoco\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nengl\\Documents\\VS Code\\Level5\\Siete\\seiteAPI\\API.csproj",
-      "projectName": "API",
-      "projectPath": "C:\\Users\\nengl\\Documents\\VS Code\\Level5\\Siete\\seiteAPI\\API.csproj",
-      "packagesPath": "C:\\Users\\nengl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nengl\\Documents\\VS Code\\Level5\\Siete\\seiteAPI\\obj\\",
+      "projectUniqueName": "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteApi\\seiteAPI.csproj",
+      "projectName": "seiteAPI",
+      "projectPath": "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteApi\\seiteAPI.csproj",
+      "packagesPath": "C:\\Users\\neoco\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\neoco\\OneDrive\\Documents\\CodeStack\\Level 5\\SeiteSite\\seiteApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nengl\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\neoco\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4543,7 +4543,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
