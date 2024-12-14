@@ -37,6 +37,11 @@ namespace seiteAPI.Services.Context
         }
 
         public IEnumerable<StudentModel> GetAllStudents()
+    {
+        return _context.StudentInfo;
+    }
+
+        public IEnumerable<StudentModel> GetAllStudent()
         {
             return _context.StudentInfo;
         }
@@ -50,5 +55,10 @@ namespace seiteAPI.Services.Context
         {
             return _context.StudentInfo.Where(student => student.UserId == userId && student.IsDeleted == false);
         }
-    }
+        public IEnumerable<StudentModel>GetSpecificStudent(int id)
+        {
+            return _context.StudentInfo.Where(student => student.Id == id && student.IsDeleted == false);
+        }
+
+}
 }
