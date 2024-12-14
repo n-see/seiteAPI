@@ -55,5 +55,10 @@ namespace seiteAPI.Services.Context
         {
             return _context.StudentInfo.Where(student => student.UserId == userId && student.IsDeleted == false);
         }
-    }
+        public IEnumerable<StudentModel>GetSpecificStudent(int id)
+        {
+            return _context.StudentInfo.Where(student => student.Id == id && student.IsDeleted == false);
+        }
+
+}
 }
