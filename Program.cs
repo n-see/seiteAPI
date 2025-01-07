@@ -18,7 +18,7 @@ builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(conne
 builder.Services.AddCors(options => {
     options.AddPolicy("BlogPolicy",
     builder => {
-        builder.WithOrigins("http://localhost:5173", "http://localhost:5020")
+        builder.WithOrigins("http://localhost:5173", "http://localhost:5020", "https://new-seite-client-fimt.vercel.app/")
         .AllowAnyHeader()
         .AllowAnyMethod();
     }

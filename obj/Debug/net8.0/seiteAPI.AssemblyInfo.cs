@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("seiteAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc19773a3cca7d37e21b7dffa1d2b145c20437c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cab6f13e630a400425eea062ff55bea29d7264f")]
 [assembly: System.Reflection.AssemblyProductAttribute("seiteAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("seiteAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
