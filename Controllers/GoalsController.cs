@@ -36,7 +36,7 @@ namespace seiteAPI.Controllers
             return _data.AddGoal(GoalToAdd);
         }
 
-         [HttpPost("DeleteGoal/{GoalToDelete}")]
+         [HttpPut("DeleteGoal/{GoalToDelete}")]
         public bool DeleteGoal(GoalsModel GoalToDelete)
         {
             return _data.DeleteGoal(GoalToDelete);
