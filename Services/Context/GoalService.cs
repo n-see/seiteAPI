@@ -23,17 +23,17 @@ namespace seiteAPI.Services.Context
         return result;
     }
 
-    public bool DeleteGoal(int GoalToDeleteId)
-    {
-        bool result = false;
-        GoalsModel foundGoal = GetGoalById(GoalToDeleteId);
-        if(foundGoal != null)
-        {
-            _context.Remove<GoalsModel>(foundGoal);
-            result = _context.SaveChanges() !=0;
-        }
-        return result;
-    }
+    // public bool DeleteGoal(GoalsModel GoalToDeleteId)
+    // {
+    //     bool result = false;
+    //     GoalsModel foundGoal = GetGoalById(GoalToDeleteId);
+    //     if(foundGoal != null)
+    //     {
+    //         _context.Remove<GoalsModel>(foundGoal);
+    //         result = _context.SaveChanges() !=0;
+    //     }
+    //     return result;
+    // }
     public IEnumerable<GoalsModel> GetAllGoals()
     {
         return _context.GoalInfo;
@@ -48,8 +48,13 @@ namespace seiteAPI.Services.Context
         {
             return _context.GoalInfo.Where(goal => goal.StudentId == goalId);
         }
-    }
+
+        public bool DeleteGoal( GoalsModel goalDelete)
+        {
+            _context.Update<GoalsModel>(goalDelete);
+            return _context.SaveChanges() != 0;
+        }
+
+    }}
 
     
-   
-}

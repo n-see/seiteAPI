@@ -13,5 +13,6 @@ namespace seiteAPI.Models
         public string? AreaOfNeed { get; set; }
         public string? MeasurableAnnualGoal { get; set; }
         public string? Baseline { get; set; }
+        public bool IsDeleted { get; set;}
     }
 }

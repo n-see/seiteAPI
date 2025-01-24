@@ -14,7 +14,7 @@ namespace seiteAPI.Models.DTO
 
         public string? ProfilePicture { get; set; }
         public string? Gender { get; set; }
-        public int Dob { get; set; }
+        public string? Dob { get; set; }
         // public int Age => CalculateAge(Dob);
         public string? FirstName { get; set; }
         public string? LastName { get; set; }

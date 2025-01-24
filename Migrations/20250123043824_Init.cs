@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace API.Migrations
+namespace seiteAPI.Migrations
 {
     /// <inheritdoc />
     public partial class Init : Migration
@@ -20,7 +20,8 @@ namespace API.Migrations
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     AreaOfNeed = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     MeasurableAnnualGoal = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Baseline = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Baseline = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -37,7 +38,7 @@ namespace API.Migrations
                     UserId = table.Column<int>(type: "int", nullable: false),
                     ProfilePicture = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Gender = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Dob = table.Column<int>(type: "int", nullable: false),
+                    Dob = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PrimaryDisability = table.Column<string>(type: "nvarchar(max)", nullable: true),
