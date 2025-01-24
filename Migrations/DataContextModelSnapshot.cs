@@ -7,7 +7,7 @@ using seiteAPI.Services.Context;
 
 #nullable disable
 
-namespace API.Migrations
+namespace seiteAPI.Migrations
 {
     [DbContext(typeof(DataContext))]
     partial class DataContextModelSnapshot : ModelSnapshot
@@ -29,8 +29,8 @@ namespace API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Dob")
-                        .HasColumnType("int");
+                    b.Property<string>("Dob")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
@@ -89,6 +89,9 @@ namespace API.Migrations
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<string>("MeasurableAnnualGoal")
                         .HasColumnType("nvarchar(max)");

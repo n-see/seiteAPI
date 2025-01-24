@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using seiteAPI.Models;
 using seiteAPI.Services.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace seiteAPI.Controllers
 {
@@ -33,6 +34,12 @@ namespace seiteAPI.Controllers
         public bool AddGoal(GoalsModel GoalToAdd)
         {
             return _data.AddGoal(GoalToAdd);
+        }
+
+         [HttpPost("DeleteGoal/{GoalToDelete}")]
+        public bool DeleteGoal(GoalsModel GoalToDelete)
+        {
+            return _data.DeleteGoal(GoalToDelete);
         }
     }
 }
